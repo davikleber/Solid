@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenClosedPrinciple.Vehicles;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,17 +13,17 @@ namespace OpenClosedPrinciple
         //Alguns conceitos não está sendo aplicados incluse o (S)
         static void Main(string[] args)
         {
-            TypeVehicle type = TypeVehicle.MOTORCYCLE;
+            TypeVehicle type = TypeVehicle.CAR;
 
             if (type == TypeVehicle.CAR)
             {
-                Vehicle vehicle = new Vehicle("Azul", 2022,2.0,5,4);
-                vehicle.Car();
+                Car vehicle = new Car("Azul", 2022,2.0,5,4);
+                
             }
             else
             {
-                Vehicle vehicle = new Vehicle("Branco", 2023, 250, 1, 0);
-                vehicle.Motorcycle();
+                Motorcycle vehicle = new Motorcycle ("Branco", 2023, 250);
+                
 
             }
             Console.ReadLine();
